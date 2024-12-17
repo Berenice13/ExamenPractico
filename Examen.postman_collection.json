@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "e4cb1293-6696-4c96-a048-952b8dd8e420",
+		"name": "Examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36674991"
+	},
+	"item": [
+		{
+			"name": "URL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Version",
+						"value": "2.0.6.0",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Y2hyaXN0b3BoZXJAZGV2ZWxvcC5teDpUZXN0aW5nRGV2ZWxvcDEyM0AuLi4=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://examentecnico.azurewebsites.net/v3/api/Test/Customer",
+					"protocol": "https",
+					"host": [
+						"examentecnico",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"v3",
+						"api",
+						"Test",
+						"Customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1- Informacion importante",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5114/api/customer/importantInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5114",
+					"path": [
+						"api",
+						"customer",
+						"importantInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2- Ordenar Direcciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5114/api/customer/sortedAddresses?orderBy=creationdate&sortOrder=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5114",
+					"path": [
+						"api",
+						"customer",
+						"sortedAddresses"
+					],
+					"query": [
+						{
+							"key": "orderBy",
+							"value": "creationdate"
+						},
+						{
+							"key": "sortOrder",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3- Direccion Preferida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5114/api/customer/preferredAddress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5114",
+					"path": [
+						"api",
+						"customer",
+						"preferredAddress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4- Direcciones por CP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5114/api/customer/addressPostalCode?PostalCode=27258",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5114",
+					"path": [
+						"api",
+						"customer",
+						"addressPostalCode"
+					],
+					"query": [
+						{
+							"key": "PostalCode",
+							"value": "27258"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
